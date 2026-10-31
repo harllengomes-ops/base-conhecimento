@@ -1,11 +1,11 @@
 # Projetos PMO — Returns & EHA
 
-> Última sincronização com a aba "Summary PMO": 29/10/2026
+> Última sincronização com a aba "Summary PMO": 31/10/2026
 
 ## Visão Geral
-- **Total no portfólio:** 48 projetos
-- **Em andamento:** 32 (Wip 12 · With Products/Reg 16 · With Expansion 3 · Planning 1)
-- **Concluídos:** 13 · **Cancelados:** 3
+- **Total no portfólio:** 49 projetos
+- **Em andamento:** 34 (Wip 14 · With Products/Reg 16 · With Expansion 3 · Planning 1)
+- **Concluídos:** 12 · **Cancelados:** 3
 - **Help Needed = Yes:** 5 (Aéreo Azul LAM, Aéreo Azul LRO, Aéreo Azul Fortaleza, Stage In, Reroute HD → SP)
 - **Planilha fonte:** Google Sheets "PMO Projects RTS/EHA" (aba Summary PMO)
 - **Acompanhamento:** WBR (Weekly Business Review) + e-mail semanal
@@ -14,7 +14,7 @@
 | Estágio | Qtde |
 |---|---|
 | 1. Iniciação | 1 |
-| 2. Planejamento | 6 |
+| 2. Planejamento | 7 |
 | 3. Desenvolvimento | 9 |
 | 4. Validação | 16 |
 | 5. Encerramento | 16 |
@@ -22,16 +22,16 @@
 ### Distribuição por tipo
 | Tipo | Qtde |
 |---|---|
-| Melhoria | 21 |
+| Melhoria | 22 |
 | Feature | 14 |
 | For vis | 13 |
 
 ### Distribuição por PIC
 | PIC | Total | Em andamento | Concluídos | Cancelados |
 |---|---|---|---|---|
-| Rafael Mattos | 18 | 12 | 4 | 2 |
+| Rafael Mattos | 19 | 13 | 4 | 2 |
 | Kemily Serrudo | 16 | 11 | 5 | 0 |
-| Harllen Dias Gomes | 14 | 9 | 4 | 1 |
+| Harllen Dias Gomes | 14 | 10 | 3 | 1 |
 
 ## Status utilizados na planilha
 - **Wip** — em andamento, conduzido pelo time de Planning
@@ -129,21 +129,28 @@
 - **ETA:** 30/10/2026
 - **PIC:** Harllen
 
-### Site de Projetos EHA & Returns — ✅ Concluído
+### Site de Projetos EHA & Returns — 5. Encerramento · Wip
 - **O que faz:** site do PMO que reúne o portfólio de projetos EHA e Returns (status, update semanal, links do Drive), integrado à aba Summary PMO e ao ClickUp
 - **Recursos:** Help – Gestão, Bugs e Melhorias (formulário) e assistente de consulta
-- **Status:** publicado e em uso desde 26/10/2026
+- **Status:** publicado e em uso desde 26/10/2026; reaberto em Wip para ajustes recentes
 - **PIC:** Harllen
+
+### Liquidation Improvements — 2. Planejamento · Wip
+- **O que faz:** Melhoria contínua e tratamento de gaps do Liquidation Flow (puxados pela frente de Returns)
+- **Status:** estudo de D&A concluído em 26/10; pendente formalizar planos de ação com HUBs e Inventário e avaliar envolvimento de mais um time na trava sistêmica
+- **PIC:** Kemily Serrudo
 
 ## Lista completa de projetos
 
-### Em andamento (32)
+### Em andamento (34)
 
 | Projeto | Tipo | Estágio | Status | PIC | ETA | Help Needed | KPI |
 |---|---|---|---|---|---|---|---|
 | Cubador estático | Melhoria | 5. Encerramento | With Products/Reg | Harllen | 30/09/2026 | No | Ticket Médio |
 | Config ER FUA de acordo com station e role | For vis | 5. Encerramento | With Products/Reg | Kemily Serrudo | 07/08/2026 | No | Loss |
 | Aéreo Azul - Manaus (LAM) | Melhoria | 5. Encerramento | With Expansion | Rafael Mattos | 30/10/2026 | Yes | Lead Time |
+| Bulky Logs Pilot (Reversa TVs) | For vis | 5. Encerramento | Wip | Rafael Mattos | 23/10/2026 | No | Ticket Médio |
+| Site de Projetos EHA & Returns | Melhoria | 5. Encerramento | Wip | Harllen | 26/10/2026 | No | — |
 | G400 (WH SIP+CB+Lovito) | For vis | 4. Validação | Wip | Harllen | 01/10/2026 | No | Seller Satisfaction |
 | Intercept to measurement of SKUs | Feature | 4. Validação | With Products/Reg | Harllen | 30/09/2026 | No | Produtividade EHA |
 | Reroute HD → SP | Feature | 4. Validação | Wip | Harllen | 30/10/2026 | Yes | — |
@@ -152,9 +159,8 @@
 | Double compensation Buyer | Melhoria | 4. Validação | With Products/Reg | Kemily Serrudo | 16/07/2026 | No | Loss |
 | Driver App / SP Interception | Feature | 4. Validação | With Products/Reg | Kemily Serrudo | 14/10/2026 | No | Total Open |
 | Handover from 3pl RTS trigger | Melhoria | 4. Validação | With Products/Reg | Kemily Serrudo | 24/08/2026 | No | — |
-| Migração RTS LMH para FMH | For vis | 4. Validação | Wip | Kemily Serrudo | 21/08/2026 | No | — |
+| Migração RTS LMH para FMH | For vis | 4. Validação | Wip | Rafael Mattos | 21/08/2026 | No | — |
 | Proof on Hold - Automatization | For vis | 4. Validação | With Products/Reg | Kemily Serrudo | 24/08/2026 | No | — |
-| Bulky Logs Pilot (Reversa TVs) | For vis | 5. Encerramento | Wip | Rafael Mattos | 23/10/2026 | No | Ticket Médio |
 | FTE 100% em EHA | For vis | 4. Validação | Wip | Rafael Mattos | 30/12/2026 | No | Produtividade EHA |
 | Goleiros com HC EHA | Melhoria | 4. Validação | Wip | Rafael Mattos | 21/08/2026 | No | — |
 | RR Pickup | For vis | 4. Validação | Wip | Rafael Mattos | 03/08/2026 | No | — |
@@ -173,8 +179,9 @@
 | Ajuste de dimensão de pacotes | Melhoria | 2. Planejamento | Planning | Rafael Mattos | 30/10/2026 | No | — |
 | Fechamento automático de TOs salvados por valor | Feature | 2. Planejamento | Wip | Rafael Mattos | 19/09/2026 | No | — |
 | [DS] Returns (RR e RTS HUB) | For vis | 2. Planejamento | Wip | Rafael Mattos | 29/10/2026 | No | Lead Time |
+| Liquidation Improvements | Melhoria | 2. Planejamento | Wip | Kemily Serrudo | — | — | — |
 
-### Concluídos (13)
+### Concluídos (12)
 
 | Projeto | Tipo | Estágio | Status | PIC | ETA | Help Needed | KPI |
 |---|---|---|---|---|---|---|---|
@@ -190,7 +197,6 @@
 | Double compensation Seller | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 24/06/2026 | — | — |
 | Padronização pesca de BRs em sorters | Melhoria | 5. Encerramento | Done | Rafael Mattos | 21/08/2028 ⚠️ (provável erro de digitação na planilha) | No | — |
 | Etiqueta SP06 > PHX | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 21/08/2026 | No | — |
-| Site de Projetos EHA & Returns | Melhoria | 5. Encerramento | Done | Harllen | 26/10/2026 | No | — |
 
 ### Cancelados (3)
 
