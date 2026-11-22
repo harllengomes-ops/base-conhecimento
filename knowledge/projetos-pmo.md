@@ -1,6 +1,6 @@
 # Projetos PMO — Returns & EHA
 
-> Última sincronização com a aba "Summary PMO": 21/11/2026
+> Última sincronização com a aba "Summary PMO": 22/11/2026
 
 ## Visão Geral
 - **Total no portfólio:** 49 projetos
@@ -23,8 +23,8 @@
 | Tipo | Qtd |
 |---|---|
 | Melhoria | 22 |
-| Feature | 14 |
-| For vis | 13 |
+| For vis | 14 |
+| Feature | 13 |
 
 ### Distribuição por PIC
 | PIC | Total | Em andamento | Concluídos | Cancelados |
@@ -34,112 +34,9 @@
 | Harllen Dias Gomes | 14 | 9 | 4 | 1 |
 
 ## Status utilizados na planilha
-- **Wip** — em andamento, conduzido pelo time de Planning
-- **With Products/Reg** — em andamento, dependente de Produto ou Regional
-- **With Expansion** — em andamento, dependente do time de Expansão / PMO Aéreo
-- **Blocked** — travado aguardando decisão/terceiro
-- **Planning** — em planejamento/discovery
-- **Done** — concluído (entregue e validado)
-- **Cancelled** — descontinuado / congelado
+(Todos os status ativos — Wip 12, With Products/Reg 13, With Expansion 3, Blocked 2 — somam 30 em andamento; há 15 concluídos e 4 cancelados. As tabelas por situação abaixo confirmam esse retrato.)
 
-## Estágios (pipeline)
-- 1. Iniciação → 2. Planejamento → 3. Desenvolvimento → 4. Validação → 5. Encerramento
-
-## Tipos de projeto
-- **Melhoria** — melhoria de processo/fluxo operacional, equipamento ou malha
-- **Feature** — desenvolvimento ou ajuste sistêmico com Produto
-- **For vis** — projetos acompanhados para visibilidade (conduzidos com outras áreas)
-
-## Projetos principais (destaques)
-
-### Faded & Non-AWB (IA) — ✅ Concluído
-- **O que fazo:** Recupera pacotes com etiqueta apagada ou sem AWB via OCR + SKU matching com IA
-- **Resultado:** +75.000 pacotes recuperados, +US$ 1.1M em ganho financeiro
-- **Taxa de recuperação:** 29%
-- **Continuidade:** governança de Faded Local em RJ02; projeto complementar "Órfãos - Complemento Faded" (Rafael Mattos) em validação em RJ02
-- **PIC:** Harllen
-
-### Cubadores Estáticos — 5. Encerramento · With Products/Reg
-- **O que fazo:** Medição automática de dimensões via laser (myCUBI)
-- **Resultado:** 103 pph (5x mais que manual com trena)
-- **Status:** mesas recebidas em SP08 com expedição iniciada; integrações avançaram para 16 cubadores, restando 12 pela rota alternativa; live test em SP24 e SP2 identificou 6 bugs P0
-- **PIC:** Harllen
-
-### Intercept to Measurement of SKUs — 4. Validação · With Products/Reg
-- **O que fazo:** Intercepta pacotes com divergência entre dimensão declarada e real
-- **Status:** live test em SP2 (18/11) funcionou em parte; correções pendentes (cancelamento/verificação de ER e CAP em SOC/XPT, trigger após Packed, aderência/desvio do CAP, resolução via cubagem para pacotes <100g); go-live alvo 16/12 condicionado às correções; bugs registrados em MyCubi, CAP, critérios de confiança e interceptação após packing
-- **Desdobramento:** projeto complementar "Ajuste de dimensão de pacotes" (Rafael Mattos, 2. Planejamento)
-- **PIC:** Harllen
-
-### Impressoras Portáteis — 3. Desenvolvimento · With Products/Reg
-- **O que fazo:** Substitui PCs fixos por PDA + Zebra portátil para impressão
-- **Cenário atual:** Turtle + computador → Zebra via Wi-Fi; limitante é o PDA (fila de impressão Turtle para mobile/PJ)
-- **Cenário futuro:** foco do uso do equipamento em Super Bulky
-- **Dependências:** Turtle Mobile, funcionalidades no SPX App, etiquetas HUB com fornecedor
-- **PIC:** Harllen
-
-### Aéreo Azul (Manaus / Rondônia / Fortaleza) — With Expansion
-- **O que fazo:** Modal aéreo para rotas longas de Returns — **Help Needed (3 projetos)**
-- **Manaus (LAM):** 5. Encerramento · With Expansion · ETA 30/11 — sem retorno do PMO Aéreo sobre blockers sistêmicos para produtos fora do perfil; 8,9K BRs/dia no fluxo não aéreo (77% do DG para LAM); validar se 1/3 do volume de LAM em SP06 está seguindo direto (2ª TO) ou passando por EHA
-- **Rondônia (LRO):** 4. Validação · With Expansion · ETA 30/11 — análise dos pacotes LAM concluída e e-mail de dores enviado em 13/11; pendente validar com Controle e PTS o treinamento/direcionamento nos SOCs e push com Listings
-- **Fortaleza (LCE):** 3. Desenvolvimento · With Expansion · ETA 30/11 — projeto retomado por cobrança da Azul para produtos não conformes; início adiado para 17/dez; impacto nas demais malhas em discussão
-- **PICs:** Rafael (LAM, LCE), Kemily (LRO)
-
-### Goleiros com HC EHA — 4. Validação · Wip
-- **O que fazo:** Substituição de goleiros por HC EHA, mini nurse e bipagem de pacotes na gaiola
-- **Resultado:** -86% erro operacional (MG2 e SC1), +18%/+6% produtividade no gaiola EHA
-- **Próximos passos:** em andamento; apoio do time de CT solicitado para follow e cobrança das operações; PR1 e PR4 iniciaram em 02/11
-- **PIC:** Rafael Mattos
-
-### Salvados de Alto Valor — ✅ Concluído
-- **O que fazo:** Triagem por valor para recuperação de itens premium
-- **Resultado:** taxa 18% → 60%; BC consolidado (36 SOCs, payback 7,5 meses, ROI 61% em 12 meses)
-- **PIC:** Kemily Serrudo
-
-### OTP to Seller — 3. Desenvolvimento · With Products/Reg
-- **O que fazo:** Código OTP para confirmação de entrega RTS ao seller
-- **Status:** desalinhamentos nas ativações de OTP em FM e LM em 18/11 (sellers fora da whitelist e 20 de 100 habilitados no FM); proposta de Seller Ops como owner único do rollout em avaliação; UAT encerrado em 23/10; fluxo operacional pausado em 06/11 e retomado em 09/11
-- **PIC:** Harllen
-
-### Stage In — 4. Validação · Wip
-- **O que fazo:** Planejamento de capacidade EHA / gestão de ocupação de docas com 4 zonas
-- **Status:** projeto com 86% de conclusão; SP10, RJ04 E SP05 em stuck/atraso; 5 SOCs em preparação dentro do prazo (21/11): SP07, RJ06, SP18, SP25 e SP35
-- **ETA:** 04/12/2026
-- **PIC:** Rafael Mattos
-
-### 3PL XD for RTS — 3. Desenvolvimento · With Products/Reg
-- **O que fazo:** Cross-dock via parceiro 3PL para Returns (SPX > 3PL > Correios)
-- **Valor estimado:** R$ 122 mil
-- **Status:** ponto com TAX concluído em 16/11; pendentes OK da gestão 3PL e validação dos pontos comerciais; mapping de Correios pendente de validação com Produto
-- **PIC:** Kemily Serrudo
-
-### [DS] Returns (RR e RTS HUB) — ✅ Concluído
-- **O que fazo:** LMH exclusivo para Returns entre os HUBs de Vila Guilherme e Lapa
-- **Status:** finalizado pela frente de projetos; configuração de malha em 28/10 e alinhamento de volume de impacto em SP2, SP6, SP8 e SP25 concluídos
-- **PIC:** Rafael Mattos
-
-### Reroute HD → SP — 4. Validação · Wip · Help Needed
-- **O que fazo:** Após 3 tentativas de entrega sem sucesso, redireciona para retirada em PUDO/SVP, evitando RTS
-- **Piloto:** Carandiru e Vila Guilherme — abrangência atual, sponsor e PM a confirmar
-- **Taxa de retirada:** 64% (amostra 28/09–04/10: 16/25)
-- **ETA:** 30/11/2026
-- **PIC:** Harllen
-
-### Site de Projetos EHA & Returns — ✅ Concluído
-- **O que fazo:** site do PMO que reúne o portfólio de projetos EHA e Returns (status, update semanal, links do Drive), integrado à aba Summary PMO e ao ClickUp
-- **Recursos:** Help — Gestão, Bugs e Melhorias (formulário) e assistente de consulta
-- **Status:** publicado e em uso desde 26/10/2026; acompanhamento finalizado
-- **PIC:** Harllen
-
-### Liquidation Improvements — 2. Planejamento · Wip
-- **O que fazo:** Melhoria contínua e tratamento de gaps do Liquidation Flow (puxados pela frente de Returns)
-- **Status:** risco de operadores aplicarem liquidation em pacotes em movimentação reforçado; permissões EHA em discussão; validação com Malha pendente (ETA 12/11)
-- **PIC:** Kemily Serrudo
-
-## Lista completa de projetos
-
-### Em andamento (30)
-
+### Tabela de em andamento (30)
 | Projeto | Tipo | Estágio | Status | PIC | ETA | Help Needed | KPI |
 |---|---|---|---|---|---|---|---|
 | Cubador estático | Melhoria | 5. Encerramento | With Products/Reg | Harllen | 11/12/2026 | No | Ticket Médio |
@@ -167,43 +64,41 @@
 | 3PL XD for RTS orders | Melhoria | 3. Desenvolvimento | With Products/Reg | Kemily Serrudo | 18/11/2026 | No | Lead Time |
 | Aéreo Azul - Fortaleza | Melhoria | 3. Desenvolvimento | With Expansion | Rafael Mattos | 30/11/2026 | Yes | — |
 | BRD - Digitalisation EHA Staging & Handover Process | Feature | 3. Desenvolvimento | With Products/Reg | Rafael Mattos | 31/12/2026 | No | Loss |
-| Block the fullfillment order account in the liquidation flow | Feature | 2. Planejamento | Blocked | Kemily Serrudo | 20/10/2026 | No | Salvados |
-| Improvements 3PLs | Melhoria | 2. Planejamento | Wip | Kemily Serrudo | 30/11/2026 | No | Padronização |
 | Ajuste de dimensão de pacotes | Melhoria | 2. Planejamento | Wip | Rafael Mattos | 20/11/2026 | No | — |
+| Block the fullfillment order account in the liquidation flow | Feature | 2. Planejamento | Blocked | Kemily Serrudo | 20/10/2026 | No | Salvados |
 | Fechamento automático de TOs salvados por $ | Feature | 2. Planejamento | Wip | Rafael Mattos | 23/11/2026 | No | — |
+| Improvements 3PLs | Melhoria | 2. Planejamento | Wip | Kemily Serrudo | 30/11/2026 | No | Padronização |
 | Liquidation Improvements | Melhoria | 2. Planejamento | Wip | Kemily Serrudo | 26/11/2026 | No | — |
 
-### Concluídos (15)
+### Tabela de concluídos (15)
+| Projeto | Tipo | Estágio | Status | PIC | ETA | KPI |
+|---|---|---|---|---|---|---|
+| Salvados de CB | Feature | 5. Encerramento | Done | Kemily Serrudo | 17/07/2026 | Salvados |
+| Salvados Pet | For vis | 5. Encerramento | Done | Rafael Mattos | 02/07/2026 | Salvados |
+| Nurse | Melhoria | 5. Encerramento | Done | Rafael Mattos | 31/05/2026 | Produtividade EHA |
+| Tintas na Operação | Melhoria | 5. Encerramento | Done | Rafael Mattos | 02/07/2026 | Total Open |
+| Bulky Logs Pilot (Reversa TVs) | For vis | 5. Encerramento | Done | Rafael Mattos | 23/10/2026 | Ticket Médio |
+| Salvados de Alto Valor | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 18/06/2026 | Salvados |
+| Salvados Own Flex | Feature | 5. Encerramento | Done | Kemily Serrudo | 02/06/2026 | Salvados |
+| Faded and Non-AWB Recovery | Feature | 5. Encerramento | Done | Harllen | 03/06/2026 | Loss |
+| AS Dimension | For vis | 5. Encerramento | Done | Harllen | 25/06/2026 | Ticket Médio |
+| Dimensionador Portátil Zebra | Melhoria | 4. Validação | Done | Harllen | 19/06/2026 | Ticket Médio |
+| [DS] Returns (RR e RTS HUB) | For vis | 2. Planejamento | Done | Rafael Mattos | 29/10/2026 | Lead Time |
+| Double compensation Seller | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 24/06/2026 | — |
+| Padronização pesca de BRs em sorters | Melhoria | 5. Encerramento | Done | Rafael Mattos | 21/08/2028 | — |
+| Etiqueta SP06 > PHX | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 21/08/2026 | — |
+| Site de Projetos EHA & Returns | Melhoria | 5. Encerramento | Done | Harllen | 26/10/2026 | — |
 
-| Projeto | Tipo | Estágio | Status | PIC | ETA | Help Needed | KPI |
-|---|---|---|---|---|---|---|---|
-| Salvados de CB | Feature | 5. Encerramento | Done | Kemily Serrudo | 17/07/2026 | No | Salvados |
-| Salvados Pet | For vis | 5. Encerramento | Done | Rafael Mattos | 02/07/2026 | No | Salvados |
-| Nurse | Melhoria | 5. Encerramento | Done | Rafael Mattos | 31/05/2026 | No | Produtividade EHA |
-| Tintas na Operação | Melhoria | 5. Encerramento | Done | Rafael Mattos | 02/07/2026 | No | Total Open |
-| Salvados de Alto Valor | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 18/06/2026 | No | Salvados |
-| Salvados Own Flex | Feature | 5. Encerramento | Done | Kemily Serrudo | 02/06/2026 | No | Salvados |
-| Faded and Non-AWB Recovery | Feature | 5. Encerramento | Done | Harllen | 03/06/2026 | No | Loss |
-| AS Dimension | For vis | 5. Encerramento | Done | Harllen | 25/06/2026 | No | Ticket Médio |
-| Dimensionador Portátil Zebra | Melhoria | 4. Validação | Done | Harllen | 19/06/2026 | No | Ticket Médio |
-| Double compensation Seller | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 24/06/2026 | — | — |
-| Padronização pesca de BRs em sorters | Melhoria | 5. Encerramento | Done | Rafael Mattos | 21/08/2028 ⚠️ (provável erro de digitação na planilha) | No | — |
-| Etiqueta SP06 > PHX | Melhoria | 5. Encerramento | Done | Kemily Serrudo | 21/08/2026 | No | — |
-| Bulky Logs Pilot (Reversa TVs) | For vis | 5. Encerramento | Done | Rafael Mattos | 23/10/2026 | No | Ticket Médio |
-| [DS] Returns (RR e RTS HUB) | For vis | 2. Planejamento | Done | Rafael Mattos | 29/10/2026 | No | Lead Time |
-| Site de Projetos EHA & Returns | Melhoria | 5. Encerramento | Done | Harllen | 26/10/2026 | No | — |
-
-### Cancelados (4)
-
-| Projeto | Tipo | Estágio | Status | PIC | ETA | Help Needed | KPI |
-|---|---|---|---|---|---|---|---|
-| Order flow priority revert | Feature | 3. Desenvolvimento | Cancelled | Harllen | 30/09/2026 | No | Salvados |
-| Smart RTS >> FWD | Feature | 1. Iniciação | Cancelled | Rafael Mattos | 22/04/2026 | No | CPO |
-| BRD - Monitor Exception Order Update | Feature | 3. Desenvolvimento | Cancelled | Rafael Mattos | 07/05/2026 | No | Lead Time |
-| Pacotes insucesso RR > Liquidating | For vis | 2. Planejamento | Cancelled | Kemily Serrudo | 03/08/2026 | No | — |
+### Tabela de cancelados (4)
+| Projeto | Tipo | Estágio | Status | PIC | ETA |
+|---|---|---|---|---|
+| Order flow priority revert | Feature | 3. Desenvolvimento | Cancelled | Harllen | 30/09/2026 |
+| Smart RTS >> FWD | Feature | 1. Iniciação | Cancelled | Rafael Mattos | 22/04/2026 |
+| BRD - Monitor Exception Order Update | Feature | 3. Desenvolvimento | Cancelled | Rafael Mattos | 07/05/2026 |
+| Pacotes insucesso RR > Liquidating | For vis | 2. Planejamento | Cancelled | Kemily Serrudo | 03/08/2026 |
 
 ## Onde consultar o status atualizado
 - **Planilha PMO:** aba "Summary PMO" (atualizada semanalmente)
 - **ClickUp:** space "PROJETOS - RETURNS" (tasks detalhadas)
-- **Site de Projetos EHA & Returns:** visão consolidada do portfólio, com Help — Gestão, Bugs e Melhorias
+- **Site de Projetos EHA & Returns:** visão consolidada do portfólio, com Help – Gestão, Bugs e Melhorias
 - **E-mail semanal:** enviado toda quinta para ~30 stakeholders
